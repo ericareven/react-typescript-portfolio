@@ -18,6 +18,17 @@ h2 {
   }
 }
 
+h3 {
+  font-size: .95rem;
+  text-align: center;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  word-wrap: break-word;
+  @media only screen and (min-width: 940px) {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+}
 
 .hand {
   animation-name: wave;

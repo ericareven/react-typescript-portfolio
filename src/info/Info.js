@@ -10,21 +10,26 @@ export const info = {
     lastName: "Reven",
     initials: "EJR", 
     position: "a Full Stack Developer",
+    punchline: "I'm a life-saving, ship-steering, bug-solving savant",
     selfPortrait: self,
     gradient: `-webkit-linear-gradient(135deg, ${colors})`,
     baseColor: colors[0],
     miniBio: [ 
         {
             emoji: '☕',
-            text: 'fueled by coffee'
+            text: 'Fueled by coffee'
         },
         {
             emoji: '🌎',
-            text: 'based in NY'
+            text: 'Based in NY'
         },
         {
             emoji: "⚓",
             text: "Captain and Dockmaster at Centerport Yacht Club"
+        },
+        {
+            emoji: "🚑",
+            text: "Former EMT and Medical Assistant"
         },
         {
             emoji: "📧",
@@ -32,11 +37,6 @@ export const info = {
         }
     ],
     socials: [
-        {
-            link: "https://www.instagram.com/airbear_96/",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
         {
             link: "https://github.com/ericareven",
             icon: "fa fa-github",
@@ -47,13 +47,18 @@ export const info = {
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
+        {
+            link: "https://www.instagram.com/airbear_96/",
+            icon: 'fa fa-instagram',
+            label: 'instagram'
+        },
 
     ],
     bio: "Hello! I'm Erica. I'm a software engineer and marine captain. I studied Health Sciences at Stony Brook University and Software Engineering at General Assembly. I enjoy traveling and am open to living almost anywhere. I look forward to networking with you!",
     skills:
     {
         proficientWith: ['javascript', 'react', 'git', 'github', 'html5', 'css', 'nodejs', 'mongoose', 'express', 'ejs'],
-        exposedTo: ['bootstrap', 'python', 'nextjs', 'flask', 'postresql']
+        exposedTo: ['bootstrap', 'python', 'nextjs', 'flask', 'postgresql', 'sass']
     }
     ,
     hobbies: [
