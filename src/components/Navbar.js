@@ -16,16 +16,16 @@ const links = [
         to: '/about',
         active: 'about'
     },
+    // {
+    //     name: info.initials,
+    //     type: 'initials',
+    //     to: '/',
+    //     active: 'home'
+    // },
     {
-        name: info.initials,
-        type: 'initials',
-        to: '/',
-        active: 'home'
-    },
-    {
-        name: 'Portfolio',
-        to: '/portfolio',
-        active: 'portfolio'
+        name: 'Projects',
+        to: '/projects',
+        active: 'projects'
     }
 ]
 
