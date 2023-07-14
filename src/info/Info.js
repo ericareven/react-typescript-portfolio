@@ -2,6 +2,7 @@ import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
+import docsIcon from "./google-sheets-icon-png-3.jpg"
 
 export let colors = ["#02AAB0", "#00CDAC"];
 
@@ -15,10 +16,10 @@ export const info = {
     gradient: `-webkit-linear-gradient(135deg, ${colors})`,
     baseColor: colors[0],
     miniBio: [ 
-        {
-            emoji: '☕',
-            text: 'Fueled by coffee'
-        },
+        // {
+        //     emoji: '☕',
+        //     text: 'Fueled by coffee'
+        // },
         {
             emoji: '🌎',
             text: 'Based in NY'
@@ -36,6 +37,14 @@ export const info = {
             text: "erica.reven@gmail.com"
         }
     ],
+    resume:{
+            emoji: <img src={docsIcon} alt="Resume Icon" />,
+            text: 'Resume',
+            to: 'https://docs.google.com/document/d/e/2PACX-1vRx8d3n9todKjzb9Zpo4jyYm6Q-Ebbusm-7phMg224cQteZ8egd0ENClI4SCEz_LVeMiJuO2eHHI7CH/pub',
+            active: 'resume',
+            rel: 'noopener noreferrer',
+            target: '_blank'
+        },
     socials: [
         {
             link: "https://github.com/ericareven",

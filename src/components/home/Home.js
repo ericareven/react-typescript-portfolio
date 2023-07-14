@@ -8,6 +8,9 @@ import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 
 export default function Home() {
+   const handleResumeClick = () => {
+     window.open(info.resume.to, info.resume.target);
+   };
 
    return (
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'}
@@ -20,11 +23,24 @@ export default function Home() {
             </h1>
             <h2>I'm {info.position}.</h2>
             <h3>{info.punchline}</h3>
-            <Box component={'ul'} p={'0.8rem'}>
+            <Box component={'ul'} p={'0.8rem'} onClick={handleResumeClick} className={Style.resume}>
+               {info.miniBio.map((bio, index) => (
+                  <EmojiBullet key={index} emoji={bio.emoji} text={bio.text} />
+               ))}
+               <li className={Style.resumeItem}>
+                  <span className={Style.resumeIcon}>{info.resume.emoji}</span>
+                  <span className={Style.resumeText}>{info.resume.text}</span>
+               </li>
+            </Box>
+            {/* <Box component={'ul'} p={'0.8rem'}>
                {info.miniBio.map((bio, index) => (
                   <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
                ))}
-            </Box>
+            </Box> */}
+            {/* <Box component={'ul'} p={'0.8rem'} className={Style.resume} onClick={handleResumeClick}>
+               <span>{info.resume.emoji}</span>
+               <span>{info.resume.text}</span>
+            </Box> */}
             <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
                {info.socials.map((social, index) => (
                   <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />

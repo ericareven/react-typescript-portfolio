@@ -7,7 +7,7 @@ import Projects from "./projects/Projects";
 import { Route, Routes } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 
-// const Resume = "https://docs.google.com/document/d/e/2PACX-1vRx8d3n9todKjzb9Zpo4jyYm6Q-Ebbusm-7phMg224cQteZ8egd0ENClI4SCEz_LVeMiJuO2eHHI7CH/pub"
+import Logo from "./logo.png";
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -40,12 +40,12 @@ export default function BaseLayout() {
                   <Route exact path={'/'} element={<Home />} />
                   <Route exact path={'/about'} element={<About />} />
                   <Route exact path={'/projects'} element={<Projects />} />
-                  {/* <Route element={<Resume />} /> */}
                </Routes>
             </Grid>
             <Grid item>
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'} py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
-                  <p>&copy; 2023</p>
+                  {/* <img src={Logo} alt="logo Icon" /> */}
+                  <p>&copy; 2023 Erica Reven</p>
                </Box>
             </Grid>
          </Grid>
