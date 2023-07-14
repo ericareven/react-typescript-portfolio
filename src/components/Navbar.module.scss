@@ -1,3 +1,26 @@
+// @import "../variables.modules";
+
+// nav {
+//   transition: $transition;
+// }
+
+// .active {
+//   border-bottom: 5px solid;
+//   border-image-slice: 1;
+// }
+
+// li {
+//   transition: $transition;
+
+//   &:hover {
+//     transform: translateY(-3px);
+//     transition: $transition;
+//   }
+// }
+
+// .link:hover {
+//   color: unset;
+// }
 @import "../variables.modules";
 
 nav {
@@ -20,4 +43,22 @@ li {
 
 .link:hover {
   color: unset;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide the regular navigation */
+  }
+  
+  nav .dropdown-toggle {
+    display: block; /* Show the dropdown toggle button */
+  }
+  
+  nav .dropdown-menu {
+    display: none; /* Initially hide the dropdown menu */
+  }
+  
+  nav .dropdown-toggle.active + .dropdown-menu {
+    display: block; /* Show the dropdown menu when the toggle button is active */
+  }
 }
