@@ -6,6 +6,10 @@ import docsIcon from "./google-sheets-icon-png-3.jpg"
 
 export let colors = ["#02AAB0", "#00CDAC"];
 
+// const handleResumeClick = () => {
+//     window.open(info.resume.to, info.resume.target);
+//   };
+
 export const info = {
     firstName: "Erica",
     lastName: "Reven",
@@ -16,10 +20,6 @@ export const info = {
     gradient: `-webkit-linear-gradient(135deg, ${colors})`,
     baseColor: colors[0],
     miniBio: [ 
-        // {
-        //     emoji: '☕',
-        //     text: 'Fueled by coffee'
-        // },
         {
             emoji: '🌎',
             text: 'Based in NY'
@@ -37,22 +37,19 @@ export const info = {
             text: "erica.reven@gmail.com"
         },
         {
-            emoji: <img src={docsIcon} alt="Resume Icon" style={{maxWidth: '1.5rem'}}/>,
+            emoji: <img 
+                src={docsIcon} 
+                alt="Resume Icon" 
+                style={{maxWidth: '1.5rem', cursor: 'pointer'}}
+                onClick={() => window.open(info.miniBio[4].to, info.miniBio[4].target)}
+            />,
             text: 'Resume',
             to: 'https://docs.google.com/document/d/e/2PACX-1vRx8d3n9todKjzb9Zpo4jyYm6Q-Ebbusm-7phMg224cQteZ8egd0ENClI4SCEz_LVeMiJuO2eHHI7CH/pub',
             active: 'resume',
             rel: 'noopener noreferrer',
-            target: '_blank'
+            target: '_blank',
         }
     ],
-    // resume:{
-    //         emoji: <img src={docsIcon} alt="Resume Icon" />,
-    //         text: 'Resume',
-    //         to: 'https://docs.google.com/document/d/e/2PACX-1vRx8d3n9todKjzb9Zpo4jyYm6Q-Ebbusm-7phMg224cQteZ8egd0ENClI4SCEz_LVeMiJuO2eHHI7CH/pub',
-    //         active: 'resume',
-    //         rel: 'noopener noreferrer',
-    //         target: '_blank'
-    //     },
     socials: [
         {
             link: "https://github.com/ericareven",
