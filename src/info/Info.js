@@ -43,7 +43,14 @@ export const info = {
                 style={{maxWidth: '1.5rem', cursor: 'pointer'}}
                 onClick={() => window.open(info.miniBio[4].to, info.miniBio[4].target)}
             />,
-            text: 'Resume',
+            text: (
+                <span 
+                  style={{cursor: 'pointer'}}
+                  onClick={() => window.open(info.miniBio[4].to, info.miniBio[4].target)}
+                >
+                  Resume
+                </span>
+              ),
             to: 'https://docs.google.com/document/d/e/2PACX-1vRx8d3n9todKjzb9Zpo4jyYm6Q-Ebbusm-7phMg224cQteZ8egd0ENClI4SCEz_LVeMiJuO2eHHI7CH/pub',
             active: 'resume',
             rel: 'noopener noreferrer',
@@ -101,6 +108,7 @@ export const info = {
         },
         {
             title: "Nomad Sitters",
+            live: "https://nomad-sitters.herokuapp.com/nomadsitters",
             source: "https://github.com/ericareven/Nomad-Sitters",
             image: mock2
         },
