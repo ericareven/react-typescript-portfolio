@@ -26,7 +26,7 @@ export const info = {
         },
         {
             emoji: "⚓",
-            text: "Captain and Dockmaster at Centerport Yacht Club"
+            text: "Captain, Office Manager, and Website Administrator at Seymour's Boatyard"
         },
         {
             emoji: "🚑",
