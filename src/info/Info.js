@@ -30,7 +30,7 @@ export const info = {
         },
         {
             emoji: "🚑",
-            text: "Former EMT and Medical Assistant"
+            text: "EMT and Former Medical Assistant"
         },
         {
             emoji: "📧",
