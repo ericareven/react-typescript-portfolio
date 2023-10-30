@@ -26,7 +26,7 @@ export const info = {
         },
         {
             emoji: "⚓",
-            text: "Captain, Office Manager, and Website Administrator at Seymour's Boatyard"
+            text: "Captain, Office Manager and Website Administrator at Seymour's Boatyard"
         },
         {
             emoji: "🚑",
