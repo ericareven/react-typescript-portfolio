@@ -51,7 +51,7 @@ export const info = {
                   Resume
                 </span>
               ),
-            to: 'https://docs.google.com/document/d/e/2PACX-1vRx8d3n9todKjzb9Zpo4jyYm6Q-Ebbusm-7phMg224cQteZ8egd0ENClI4SCEz_LVeMiJuO2eHHI7CH/pub',
+            to: 'https://docs.google.com/document/d/e/2PACX-1vRTD0udnRbJ0k_wrpUmxV8feePYLM1HB8-dtznYN4DMf1_xLvCxAqVUSGerXaaPm_NqLa_xNiEjxWAl/pub',
             active: 'resume',
             rel: 'noopener noreferrer',
             target: '_blank',
