@@ -22,15 +22,15 @@ export const info = {
     miniBio: [ 
         {
             emoji: '🌎',
-            text: 'Based in NY'
+            text: 'Based in St. Louis, Missouri'
         },
         {
             emoji: "⚓",
-            text: "Captain, Office Manager and Website Administrator at Seymour's Boatyard"
+            text: "USCG Licensed Captain"
         },
         {
             emoji: "🚑",
-            text: "EMT and Former Medical Assistant"
+            text: "Medical Proffesional turned Tech Enthusiast"
         },
         {
             emoji: "📧",
